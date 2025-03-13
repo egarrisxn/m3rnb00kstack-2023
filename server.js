@@ -56,10 +56,10 @@ app.use(express.static(path.join(__dirname, "./client/dist")));
 
 // Handle all other routes by serving the React frontend's index.html
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist", "index.html"));
+  res.sendFile(path.join(__dirname, "./client/dist", "index.html"));
 });
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`server is working at port:${PORT} or http://localhost:${PORT}`);
+  console.log(`Server is working at Port ${PORT} or http://localhost:${PORT}`);
 });
