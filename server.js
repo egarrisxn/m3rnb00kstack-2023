@@ -17,10 +17,16 @@ const __dirname = dirname(__filename);
 const allowedOrigins = [
   "https://m3rnb00kstack-09c002794aea.herokuapp.com",
   "https://m3rnb00kstack-09c002794aea.herokuapp.com/",
-  "http://localhost:5050",
-  "http://localhost:5050/",
   "http://localhost:5173",
   "http://localhost:5173/",
+  "http://localhost:5050",
+  "http://localhost:5050/",
+  "http://localhost:4173",
+  "http://localhost:4173/",
+  "http://localhost:3001",
+  "http://localhost:3001/",
+  "http://localhost:3000",
+  "http://localhost:3000/",
 ];
 
 // Middleware setup
