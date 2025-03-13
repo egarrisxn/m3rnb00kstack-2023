@@ -6,7 +6,7 @@ _Initially created in the spring of 2023 for my UCF Full-Stack Web Development B
 
 ## Description
 
-m3rn-b00k-stack is a MERN Stack application focused around...you guessed it...books! It let's you register an account, login, create a book, store in your personal list, edit the book, and delete the book..you know..CRUD stuff. Deployed using Render.
+m3rn-b00k-stack is a MERN Stack application focused around...you guessed it...books! It let's you register an account, login, create a book, store in your personal list, edit the book, and delete the book..you know..CRUD stuff. Deployed using Heroku.
 
 ![m3rnb00ksgithub](https://github.com/user-attachments/assets/e6d1c78c-8289-4e74-9285-42ad714ed1ba)
 
@@ -19,7 +19,7 @@ m3rn-b00k-stack is a MERN Stack application focused around...you guessed it...bo
 - Node.js
 - Vite
 - Tailwind CSS
-- Render
+- Heroku
 
 ## Installation
 
