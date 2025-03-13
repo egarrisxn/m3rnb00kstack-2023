@@ -1,3 +1,0 @@
-    "server": "nodemon --ignore client/ server.js",
-
-     "preinstall": "cd client && pnpm install",

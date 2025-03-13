@@ -31,15 +31,11 @@ export function BookTable({ isPrivate, onDataFetch }) {
           };
         }
 
-        console.log("Fetching books from:", url);
-
         const response = await fetch(url, options);
-        console.log("Response status:", response.status);
 
         if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
         const data = await response.json();
-        console.log("Fetched books data:", data);
 
         setBooks(data);
         if (onDataFetch) onDataFetch(data);

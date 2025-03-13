@@ -16,7 +16,6 @@ export function AuthWrapper() {
         errorElement={<Alert message="Something went wrong!" type="error" />}
       >
         {(user) => {
-          console.log("User data:", user);
           return <AuthProvider userData={user}>{outlet}</AuthProvider>;
         }}
       </Await>

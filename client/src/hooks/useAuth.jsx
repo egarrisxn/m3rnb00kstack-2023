@@ -6,7 +6,6 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children, userData }) => {
   const [user, setUser] = useLocalStorage("user", userData);
-  console.log("Initial user data:", userData);
   const navigate = useNavigate();
 
   const value = useMemo(() => {
