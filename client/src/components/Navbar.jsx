@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { ThemeToggle } from "./ThemeToggle";
 
-export const Navbar = ({ pages }) => {
+export function Navbar({ pages }) {
   const { user, logout } = useAuth();
 
   return (
@@ -48,4 +48,4 @@ export const Navbar = ({ pages }) => {
       </nav>
     </header>
   );
-};
+}

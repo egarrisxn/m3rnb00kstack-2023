@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../hooks/useAuth";
-
-const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5050";
+import { apiUrl } from "../hooks/useEnv";
 
 export function ProfileHeader() {
   const { user } = useAuth();

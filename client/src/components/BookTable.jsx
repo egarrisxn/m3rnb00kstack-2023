@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { PlusIcon } from "lucide-react";
+import { apiUrl } from "../hooks/useEnv";
 import { BookList } from "./BookList";
-
-const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5050";
 
 export function BookTable({ isPrivate, onDataFetch }) {
   const [books, setBooks] = useState([]);
