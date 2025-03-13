@@ -4,6 +4,8 @@
 
 _Originally created in Spring 2023 for my UCF Full-Stack Web Development Bootcamp._
 
+![m3rnb00kstack](https://github.com/user-attachments/assets/42d98f8f-0ce4-44c7-8932-a325ea662295)
+
 ## 🚀 Overview
 
 **m3rnb00kstack-2023** is a **MERN stack** web application designed for book lovers! With this app, you can:  
