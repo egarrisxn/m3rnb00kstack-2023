@@ -83,9 +83,9 @@ export function BookTable({ isPrivate, onDataFetch }) {
     );
 
   return (
-    <div className="mt-4 container dark:shadow-slate-100/10 max-w-[84rem] w-full mx-auto p-6 bg-white text-black rounded-3xl border shadow-lg">
+    <div className="mt-4 container max-w-[84rem] w-full mx-auto p-6 sm:rounded-3xl shadow-slate-400 shadow-lg dark:shadow-slate-100/10 sm:border sm:dark:border dark:bg-[#282f48] bg-white text-black">
       <div className="flex flex-row justify-between items-center">
-        <h2 className="text-2xl font-semibold mb-6 text-slate-900">
+        <h2 className="text-2xl font-semibold mb-6 dark:text-slate-200 text-slate-900">
           {isPrivate ? "Your List" : "All Books"}
         </h2>
         {isPrivate && (

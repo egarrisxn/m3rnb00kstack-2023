@@ -7,14 +7,16 @@ export function Navbar({ pages }) {
 
   return (
     <header className="mb-8 sm:pt-4">
-      <nav className="p-4 sm:py-5 shadow-lg dark:shadow-slate-100/10 sm:border bg-white text-black border-b sm:rounded-3xl container mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-0">
+      <nav className="p-4 sm:py-5 shadow-lg shadow-slate-400 dark:shadow-lg dark:shadow-slate-100/10 sm:border bg-[#282f48] text-white border-b sm:rounded-3xl container mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-0">
         <NavLink
           to="/"
           aria-label="Home"
-          className="flex text-slate-600 dark:text-slate-400 text-3xl leading-none tracking-tight font-black"
+          className="flex flex-row items-center gap-0.5"
         >
-          <img src="/book.png" alt="Logo" className="size-8 pr-0.5" /> M
-          <span className="text-red-400">B</span>S
+          <img src="/m3rn.png" alt="Logo" className="size-8 " />{" "}
+          <p className=" text-4xl leading-none tracking-tighter font-black text-slate-600 dark:text-slate-400 mb-1">
+            <span className="text-red-600">B00K</span>STACK
+          </p>
         </NavLink>
         <div className="flex items-center flex-row gap-3 sm:gap-4">
           {pages?.map((page) => (

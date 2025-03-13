@@ -19,9 +19,9 @@ export function ThemeToggle() {
       className="pt-1"
     >
       {theme === "dark" ? (
-        <Moon size={18} className="text-yellow-500 hover:text-yellow-600" />
+        <Moon size={18} className="text-slate-400 hover:text-slate-500" />
       ) : (
-        <Sun size={18} className="text-slate-800 hover:text-slate-950" />
+        <Sun size={18} className="text-yellow-400 hover:text-yellow-500" />
       )}
     </button>
   );

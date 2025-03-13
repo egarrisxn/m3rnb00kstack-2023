@@ -56,8 +56,8 @@ export function AuthForm({ mode }) {
   };
 
   return (
-    <div className="mt-8 sm:mt-24 dark:shadow-slate-100/10 container max-w-xl w-full mx-auto px-8 py-10 bg-white text-black rounded-3xl border shadow-lg">
-      <h2 className="text-2xl font-semibold mb-8 text-slate-900">
+    <div className="mt-8 sm:mt-24 shadow-slate-400 shadow-lg dark:shadow-slate-100/10 sm:border dark:bg-[#282f48]   bg-white text-black sm:rounded-3xl container max-w-xl w-full mx-auto px-8 py-10 ">
+      <h2 className="text-2xl font-semibold mb-8 dark:text-slate-200 text-slate-900">
         {isLoginMode ? "Login" : "Register"}
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -67,7 +67,7 @@ export function AuthForm({ mode }) {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-slate-700"
+            className="block text-sm font-medium text-slate-700 dark:text-slate-400"
           >
             Email
           </label>
@@ -84,7 +84,7 @@ export function AuthForm({ mode }) {
         <div>
           <label
             htmlFor="password"
-            className="block text-sm font-medium text-slate-700"
+            className="block text-sm font-medium text-slate-700 dark:text-slate-400"
           >
             Password
           </label>
