@@ -1,8 +1,9 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
-import { apiUrl } from "../hooks/useEnv";
 import { Alert } from "./Alert";
+
+const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5050";
 
 export function AuthForm({ mode }) {
   const {
