@@ -1,0 +1,44 @@
+{
+  "name": "m3rn-b00k-stack",
+  "version": "1.0.0",
+  "description": "M3RN B00K STACK.",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "license": "MIT",
+  "keywords": [],
+  "engines": {
+    "node": "23.x",
+    "pnpm": "10.x",
+    "npm": "11.x"
+  },
+  "scripts": {
+    "preinstall": "cd client && pnpm install",
+    "client": "cd client && pnpm run dev",
+    "build": "cd client && pnpm run build",
+    "preview": "cd client && pnpm run preview",
+    "lint": "cd client && pnpm run lint",
+    "server": "nodemon server.js",
+    "server:production": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pnpm run build && pnpm run server:production",
+    "dev": "concurrently \"pnpm run server\" \"pnpm run client\""
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.14.2",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bcrypt"
+    ]
+  }
+}
