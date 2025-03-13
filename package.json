@@ -9,8 +9,7 @@
   "keywords": [],
   "engines": {
     "node": "23.x",
-    "pnpm": "10.x",
-    "npm": "11.x"
+    "pnpm": "10.x"
   },
   "scripts": {
     "preinstall": "cd client && pnpm install",
