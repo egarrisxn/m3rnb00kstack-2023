@@ -6,8 +6,8 @@ export function Navbar({ pages }) {
   const { user, logout } = useAuth();
 
   return (
-    <header className="mb-8 sm:pt-4">
-      <nav className="p-4 sm:py-5 shadow-lg shadow-slate-400 dark:shadow-lg dark:shadow-slate-100/10 sm:border bg-[#282f48] text-white border-b sm:rounded-3xl container mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-0">
+    <header className="mb-8 sm:pt-8 sm:px-4">
+      <nav className="p-4 sm:py-5 w-full max-w-7xl shadow-lg shadow-slate-400 dark:shadow-slate-100/10 sm:border bg-[#282f48] text-white border-b sm:rounded-3xl container mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-0">
         <NavLink
           to="/"
           aria-label="Home"

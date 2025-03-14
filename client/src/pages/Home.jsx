@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export function HomePage() {
   return (
     <>
-      <div className="container text-center max-w-[90rem] w-full sm:text-justify mx-auto p-6 space-y-1">
+      <div className="container w-full max-w-6xl text-center sm:text-justify mx-auto p-6 space-y-1">
         <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
           Welcome to The MERN Book Stack!
         </h1>
@@ -20,12 +20,14 @@ export function HomePage() {
           </p>
         </div>
       </div>
-      <div className="mt-4 container max-w-[84rem] w-full mx-auto p-6 bg-white rounded-lg border shadow-md">
-        <img
-          src="/hero.png"
-          alt="Logo"
-          className="flex rounded-lg object-cover"
-        />
+      <div className="p-4">
+        <div className="mt-4 container max-w-6xl w-full mx-auto p-2 rounded-3xl bg-white border shadow-lg shadow-slate-400 dark:shadow-slate-100/10">
+          <img
+            src="/hero.png"
+            alt="Logo"
+            className="flex rounded-lg object-cover"
+          />
+        </div>
       </div>
     </>
   );

@@ -56,7 +56,7 @@ export function AuthForm({ mode }) {
   };
 
   return (
-    <div className="mt-8 sm:mt-24 shadow-slate-400 shadow-lg dark:shadow-slate-100/10 sm:border dark:bg-[#282f48]   bg-white text-black sm:rounded-3xl container max-w-xl w-full mx-auto px-8 py-10 ">
+    <div className="mt-4 container sm:shadow-slate-400 sm:shadow-lg sm:dark:shadow-slate-100/10 sm:border sm:bg-white sm:dark:bg-[#282f48] sm:rounded-3xl max-w-xl w-full mx-auto p-4 sm:p-6">
       <h2 className="text-2xl font-semibold mb-8 dark:text-slate-200 text-slate-900">
         {isLoginMode ? "Login" : "Register"}
       </h2>
@@ -72,7 +72,7 @@ export function AuthForm({ mode }) {
             Email
           </label>
           <input
-            className="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            className="mt-1 px-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             type="email"
             id="email"
             {...register("email", { required: "Email is required" })}
@@ -89,7 +89,7 @@ export function AuthForm({ mode }) {
             Password
           </label>
           <input
-            className="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            className=" px-1 mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             id="password"
             type="password"
             {...register("password", { required: "Password is required" })}
@@ -110,7 +110,7 @@ export function AuthForm({ mode }) {
           <button
             type="button"
             onClick={() => navigate(isLoginMode ? "/register" : "/login")}
-            className="text-indigo-600 hover:text-indigo-500"
+            className="text-blue-500 font-medium hover:underline underline-offset-4"
           >
             {isLoginMode
               ? "Don't have an account? Register"

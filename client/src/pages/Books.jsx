@@ -3,7 +3,7 @@ import { BookTable } from "../components/BookTable";
 export function BooksPage() {
   return (
     <>
-      <div className="container w-full max-w-[90rem] text-center sm:text-justify mx-auto p-6 space-y-1">
+      <div className="container w-full max-w-6xl text-center sm:text-justify mx-auto p-6 space-y-1">
         <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
           Here is where you will find all the books we have stored.
         </h1>
@@ -11,7 +11,9 @@ export function BooksPage() {
           Please help us add more books to the list!
         </p>
       </div>
-      <BookTable isPrivate={false} />
+      <div className="p-4">
+        <BookTable isPrivate={false} />
+      </div>
     </>
   );
 }

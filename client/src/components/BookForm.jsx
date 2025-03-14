@@ -74,15 +74,17 @@ export function BookForm() {
   };
 
   return (
-    <div className="containe dark:shadow-slate-100/10 max-w-[84rem] mt-4 w-full mx-auto p-6 border bg-white text-black rounded-3xl shadow-lg">
-      <h2 className="text-2xl font-semibold mb-6 text-slate-900">Book Info</h2>
+    <div className="mt-4 container sm:shadow-slate-400 sm:shadow-lg sm:dark:shadow-slate-100/10 sm:border sm:bg-white sm:dark:bg-[#282f48] sm:rounded-3xl max-w-6xl w-full mx-auto p-4 sm:p-6">
+      <h2 className="text-2xl font-semibold mb-6 dark:text-slate-200 text-slate-900">
+        Book Info
+      </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {["title", "author", "year", "genre"].map((field) => (
             <div key={field}>
               <label
                 htmlFor={field}
-                className="block text-sm font-medium text-slate-700"
+                className="block text-sm font-medium dark:text-slate-400 text-slate-700"
               >
                 {field.charAt(0).toUpperCase() + field.slice(1)}
               </label>
@@ -105,7 +107,7 @@ export function BookForm() {
         <div>
           <label
             htmlFor="description"
-            className="block text-sm font-medium text-slate-700"
+            className="block text-sm font-medium dark:text-slate-400 text-slate-700"
           >
             Description
           </label>
