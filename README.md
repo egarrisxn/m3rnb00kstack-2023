@@ -1,10 +1,10 @@
 #  📚 m3rnb00kstack-2023
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/m3rnb00kstack-2023) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/m3rnb00kstack-2023)
-
 _Originally created in Spring 2023 for my UCF Full-Stack Web Development Bootcamp._
 
 ![m3rnb00kstack](https://github.com/user-attachments/assets/42d98f8f-0ce4-44c7-8932-a325ea662295)
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/m3rnb00kstack-2023) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/m3rnb00kstack-2023)
 
 ## 🚀 Overview
 
